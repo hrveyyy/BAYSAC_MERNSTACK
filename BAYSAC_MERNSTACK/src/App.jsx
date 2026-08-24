@@ -1,4 +1,5 @@
 import StudentCard from "./components/studentcard.jsx";
+import Subject from "./components/subject.jsx";
 
 function App() {
   return (
@@ -16,6 +17,11 @@ function App() {
       bday="2003-08-22" 
       studentNum="202400926" 
       course="Information Technology" />
+
+      <Subject
+      scheduleCode="DCIT 26"
+      nameOfSubject="APPLICATION DEVELOPMENT"
+      classSchedule="202612867" />
     </div>
   );
 }

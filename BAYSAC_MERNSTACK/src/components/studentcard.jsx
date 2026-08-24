@@ -5,7 +5,7 @@ function StudentCard({name, age, bday, studentNum, course}) {
       <p className="text-gray-600 mb-1">Age: {age}</p>
       <p className="text-gray-600 mb-1">Birthday: {bday}</p>
       <p className="text-gray-600 mb-1">Student Number: {studentNum}</p>
-      <p>Course: {course}</p>
+      <p className="text-gray-600 mb-1">Course: {course}</p>
     </div>
   );
 }

@@ -1,29 +1,19 @@
-import StudentCard from "./components/studentcard.jsx";
-import Subject from "./components/subject.jsx";
+import {BrowserRouter, Routes, Route, Link} from "react-router-dom";
+import Home from "./pages/Home";
+import Student from "./pages/Student";
+import StudentDetails from "./pages/StudentDetails";
+import Navbar from "./components/Navbar";
 
-function App() {
-  return (
-    <div className="App">
-      <StudentCard 
-      name="John Yevs Bryan Suico" 
-      age={20} 
-      bday="2006-09-15" 
-      studentNum="202404436" 
-      course="Information Technology" />
-
-      <StudentCard 
-      name="Charlito Jr. C. Nodalo" 
-      age={23} 
-      bday="2003-08-22" 
-      studentNum="202400926" 
-      course="Information Technology" />
-
-      <Subject
-      scheduleCode="DCIT 26"
-      nameOfSubject="APPLICATION DEVELOPMENT"
-      classSchedule="202612867" />
-    </div>
+function App(){
+  return(
+    <BrowserRouter>
+      <Navbar/>
+      <Routes>
+        <Route path="/" element={<Home/>} />
+        <Route path="/student" element={<Student/>} />
+        <Route path="/studentdetails" element={<StudentDetails/>} />
+      </Routes>
+    </BrowserRouter>
   );
 }
-
 export default App;

@@ -3,42 +3,49 @@
         "id": 1,
         "name": "Charles",
         "age": 23,
+        "sex": "Male",
         "course": "BSIT"
     },
     {
         "id": 2,
         "name": "Bryan",
         "age": 20,
+        "sex": "Male",
         "course": "BSIT"
     },
     {
         "id": 3,
         "name": "Andrea",
         "age": 21,
+        "sex": "Female",
         "course": "BSIT"
     },
     {
         "id": 4,
         "name": "Miguel",
         "age": 22,
+        "sex": "Male",
         "course": "BSCS"
     },
     {
         "id": 5,
         "name": "Sofia",
         "age": 19,
+        "sex": "Female",
         "course": "BSEd"
     },
     {
         "id": 6,
         "name": "Daniel",
         "age": 24,
+        "sex": "Male",
         "course": "BSBA"
     },
     {
         "id": 7,
         "name": "Camille",
         "age": 20,
+        "sex": "Female",
         "course": "BSHM"
     }
 ]

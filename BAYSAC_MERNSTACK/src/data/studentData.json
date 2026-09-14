@@ -1,0 +1,44 @@
+[
+    {
+        "id": 1,
+        "name": "Charles",
+        "age": 23,
+        "course": "BSIT"
+    },
+    {
+        "id": 2,
+        "name": "Bryan",
+        "age": 20,
+        "course": "BSIT"
+    },
+    {
+        "id": 3,
+        "name": "Andrea",
+        "age": 21,
+        "course": "BSIT"
+    },
+    {
+        "id": 4,
+        "name": "Miguel",
+        "age": 22,
+        "course": "BSCS"
+    },
+    {
+        "id": 5,
+        "name": "Sofia",
+        "age": 19,
+        "course": "BSEd"
+    },
+    {
+        "id": 6,
+        "name": "Daniel",
+        "age": 24,
+        "course": "BSBA"
+    },
+    {
+        "id": 7,
+        "name": "Camille",
+        "age": 20,
+        "course": "BSHM"
+    }
+]

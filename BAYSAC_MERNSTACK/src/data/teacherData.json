@@ -1,0 +1,10 @@
+[
+    {
+        "id": 1,
+        "name": "Charles",
+        "employeeNum": "F001",
+        "specialization": "Programming",
+        "department": "BSIT",
+        "sex": "Male"
+    }
+]

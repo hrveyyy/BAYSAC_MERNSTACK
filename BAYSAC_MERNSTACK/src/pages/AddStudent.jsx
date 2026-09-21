@@ -1,33 +1,35 @@
-
+import { useNavigate } from "react-router-dom";
 import { useState } from "react";
-import studentData from "../data/studentData.json";
 
-export default function AddStudent (){
+export default function AddStudent ({ studentData }){
 
     const [name, setName] = useState("");
     const [age, setAge] = useState("");
     const [sex, setSex] = useState("");
     const [course, setCourse] = useState("");
-    const [students, setStudents] = useState(studentData);
+    const navigate = useNavigate();
 
     return(
         <div className=" flex flex-col items-center justify-center">
             <h1 className="text-2xl font-bold mb-4">Add Student</h1>    
             <form className="bg-white" onSubmit={(e) => {
                 e.preventDefault();
-               
+                
+                
                 const newStudent = {
-                    id: students.length + 1,
+                    id: studentData.length + 1,
                     name: name,
                     age: age,
                     sex: sex,
                     course: course
                 };
-                setStudents([...students, newStudent]);
+                studentData.push(newStudent);
                 setName("");
                 setAge("");
                 setSex("");
                 setCourse("");
+
+                navigate("/student");
             }}>
                 <label htmlFor="name" className="p-10 m-10">Name:</label>
                 <input type="text" id="name" name="name" value={name} required onChange={(e) => setName(e.target.value)}/>
@@ -51,14 +53,6 @@ export default function AddStudent (){
 
                 <button type="submit">Add Student</button>
             </form>
-            {students.map((student) => (
-                <div key={student.id} className="bg-white shadow-md rounded-lg p-10 m-4">
-                    <p className="text-xl font-semibold">{student.name}</p>
-                    <p className="text-gray-600 mb-1">Age: {student.age}</p>
-                    <p className="text-gray-600 mb-1">Sex: {student.sex}</p>
-                    <p className="text-gray-600 mb-1">Course: {student.course}</p>
-                </div>
-            ))}
         </div>
     );
 }
